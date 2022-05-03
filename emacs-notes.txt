@@ -1,0 +1,48 @@
+This is my notes about emacs
+
+Test first line
+
+# Some Topics
+- emacs exwm
+- emacs EAF
+- emacs rime ?
+- EAF Git Client
+
+;; Don't show the splash screen
+(setq inhibit-startup-message t)
+;; Flash when the bell rings
+(setq visible-bell t)
+
+# How to copy?
+C-<SPC>
+move cursor
+M-w
+
+# How to repeat command?
+Esc [number] [command]
+M-[number] [command]
+C-u [number] [command]
+
+# How to show line number?
+M-x linum-mode
+
+# How to change text size?
+C-x C-+
+C-x C--
+
+# How to install package?
+- Edit init.el
+```
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
+;; and `package-pinned-packages`. Most users will not need or want to do this.
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(package-initialize)
+```
+- M-x package-refresh-contents
+- M-x package-install
+
+# Packages
+cider
+clojure-mode

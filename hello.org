@@ -1,0 +1,83 @@
+* First Heading
+
+  Here is some content!
+
+** Sub-Heading
+
+  Add some more content
+
+*** 3 level Heading
+
+**** 4 level Heading
+
+* Org mode
+  
+** Insert a Heading
+ C-return
+
+** Fold unfold titles
+ S-tab
+ tab
+
+** Move item up
+ M-up
+ M-S-up
+
+** Insert link
+ [[https://www.baidu.com][Select]] and M-x org-insert-link
+ C-c C-l
+ C-c C-o[[file:C:/][(open a link)]]
+ 
+** Insert table
+ Try tab and M-return and M-S-return
+ | Name        | Age | Uses Emcas |
+ | David       |  37 | Yes        |
+ | David       |     | No         |
+ | HaoTestUser |     |            |
+
+** TODO Insert List
+- First item
+- [X] First item M-x org-toggle-checkbox (C-c C-x C-b)
+- [ ] tetst
+- [ ] 
+- [ ] 
+- Second item
+- Third tiem
+
+** TODO Insert Code block
+#+begin_src emcas-lisp
+(defun my-elisp-func ()
+ (message "Hello!"))
+#+end_src
+
+** DONE change the TODO state of an item
+ M-x org-todo
+ S-left S-right
+
+** M-x visual-line-mode
+
+
+** TODO Setting Tags                                                  :learn:
+C-c C-q
+
+** Task effort, property
+   :PROPERTIES:
+   :Effort:   4
+   :END:
+M-x org-set-effort
+M-x org-set-property
+
+* Archive
+** TODO Finish documation                                              :life:
+   M-x org-schedule
+   SCHEDULED: <2022-04-30 周六>
+** TODO Merge the PR
+   DEADLINE: <2022-06-25 周六>
+   M-x org-deadline
+   SCHEDULED: <2022-05-20 周五>
+
+* Backlog
+
+** TODO refactor auth server                                           :work:
+   M-x org-time-stamp
+   <2022-04-23 周六>
