@@ -81,3 +81,5 @@ M-x org-set-property
 ** TODO refactor auth server                                           :work:
    M-x org-time-stamp
    <2022-04-23 ÖÜÁù>
+
+** TODO Power Apps
