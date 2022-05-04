@@ -51,7 +51,11 @@ M-x load-file
 M-x eval-buffer
 
 M-x load-theme (wheatgrass)
+
 C-c C-, ([[https://orgmode.org/manual/Structure-Templates.html][org-insert-structure-template]])
+
+C-x r m (add bookmark)
+C-x r b (open bookmark)
 
 ** Snippets
 
