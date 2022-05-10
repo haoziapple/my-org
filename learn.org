@@ -34,6 +34,10 @@
 - [[https://docs.microsoft.com/en-us/rest/api/azure/][Azure REST API reference]]
 - [[https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow][OAuth 2.0 implicit grant flow]]
 
+** Power Apps
+
+- [[https://make.powerapps.com/environments/Default-ecaa386b-c8df-4ce0-ad01-740cbdb5ba55/home][Power Apps HomePage]]
+
 * Emacs
 
 ** Links
