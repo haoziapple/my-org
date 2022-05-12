@@ -37,6 +37,8 @@
 ** Power Apps
 
 - [[https://make.powerapps.com/environments/Default-ecaa386b-c8df-4ce0-ad01-740cbdb5ba55/home][Power Apps HomePage]]
+- [[https://admin.powerplatform.microsoft.com/home][Power Apps Admin Center]]
+
 - [[https://docs.microsoft.com/en-us/learn/paths/create-powerapps/][Learn Path:Create a canvas app in Power Apps]]
 - [[https://docs.microsoft.com/en-us/learn/paths/work-with-data-in-a-canvas-app/][Learn Path:Work with data in a Power Apps canvas app]]
 - [[https://docs.microsoft.com/en-us/learn/paths/use-basic-formulas-powerapps-canvas-app/][Learn Path:Use basic formulas to make better Power Apps canvas apps]]
