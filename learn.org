@@ -43,6 +43,18 @@
 - [[https://docs.microsoft.com/en-us/learn/paths/work-with-data-in-a-canvas-app/][Learn Path:Work with data in a Power Apps canvas app]]
 - [[https://docs.microsoft.com/en-us/learn/paths/use-basic-formulas-powerapps-canvas-app/][Learn Path:Use basic formulas to make better Power Apps canvas apps]]
 
+
+- [[https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/create-update-collection][Create and update a collection in a canvas app]]
+- [[https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/powerapps-custom-visual][Power Apps visual for Power BI]]
+
+** Power Virtual Agents
+
+- [[https://web.powerva.microsoft.com/][Power Virtual Agents HomePage]]
+
+- [[https://docs.microsoft.com/en-us/power-virtual-agents/fundamentals-what-is-power-virtual-agents-portal][Power Virtual Agents web app overview]]
+- [[https://docs.microsoft.com/en-us/power-virtual-agents/publication-add-bot-to-microsoft-teams][Add a chatbot to Microsoft Teams]]
+- [[https://docs.microsoft.com/en-us/power-virtual-agents/analytics-billed-sessions][View billed sessions for Power Virtual Agents]]
+
 * Emacs
 
 ** Links
