@@ -12,7 +12,8 @@
 *** DONE [[https://docs.microsoft.com/en-us/learn/paths/develop-solutions-that-use-blob-storage/?tab=tab-learning-paths][Develop solutions that use Blob storage]]
     <2022-05-01 周日>
 
-*** [[https://docs.microsoft.com/en-us/learn/paths/az-204-develop-solutions-that-use-azure-cosmos-db/?tab=tab-learning-paths][Develop solutions that use Azure Cosmos DB]]
+*** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-develop-solutions-that-use-azure-cosmos-db/?tab=tab-learning-paths][Develop solutions that use Azure Cosmos DB]]
+    <2022-05-13 周五>
 
 *** TODO [[https://docs.microsoft.com/en-us/learn/paths/az-204-develop-solutions-that-use-azure-cosmos-db/?tab=tab-learning-paths][Implement infrasturcture as a service solutions]]
 *** TODO [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-authentication-authorization/?tab=tab-learning-paths][Implement user authentication and authorization]]
