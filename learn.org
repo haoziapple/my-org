@@ -15,7 +15,8 @@
 *** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-develop-solutions-that-use-azure-cosmos-db/?tab=tab-learning-paths][Develop solutions that use Azure Cosmos DB]]
     <2022-05-13 ÖÜÎå>
 
-*** TODO [[https://docs.microsoft.com/en-us/learn/paths/az-204-develop-solutions-that-use-azure-cosmos-db/?tab=tab-learning-paths][Implement infrasturcture as a service solutions]]
+*** [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-iaas-solutions/?tab=tab-learning-paths][Implement infrasturcture as a service solutions]]
+    <2022-05-14 ÖÜÁù>
 *** TODO [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-authentication-authorization/?tab=tab-learning-paths][Implement user authentication and authorization]]
 
 *** TODO [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-secure-cloud-solutions/?tab=tab-learning-paths][Implement secure cloud solution]]
