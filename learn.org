@@ -7,16 +7,16 @@
 *** DONE [[https://docs.microsoft.com/en-us/learn/paths/create-azure-app-service-web-apps/?tab=tab-learning-paths][Create Azure App Service web apps]]
 
 *** DONE [[https://docs.microsoft.com/en-us/learn/paths/implement-azure-functions/?tab=tab-learning-paths][Inplement Azure Functions]] 
-    <2022-04-29 周五>
+    <2022-04-29 鍛ㄤ簲>
 
 *** DONE [[https://docs.microsoft.com/en-us/learn/paths/develop-solutions-that-use-blob-storage/?tab=tab-learning-paths][Develop solutions that use Blob storage]]
-    <2022-05-01 周日>
+    <2022-05-01 鍛ㄦ棩>
 
 *** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-develop-solutions-that-use-azure-cosmos-db/?tab=tab-learning-paths][Develop solutions that use Azure Cosmos DB]]
-    <2022-05-13 周五>
+    <2022-05-13 鍛ㄤ簲>
 
 *** [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-iaas-solutions/?tab=tab-learning-paths][Implement infrasturcture as a service solutions]]
-    <2022-05-14 周六>
+    <2022-05-14 鍛ㄥ叚>
 *** TODO [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-authentication-authorization/?tab=tab-learning-paths][Implement user authentication and authorization]]
 
 *** TODO [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-secure-cloud-solutions/?tab=tab-learning-paths][Implement secure cloud solution]]
@@ -49,8 +49,12 @@
 - [[https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/create-update-collection][Create and update a collection in a canvas app]]
 - [[https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/powerapps-custom-visual][Power Apps visual for Power BI]]
 
-** Power Virtual Agents
+** Power BI
 
+- [[https://app.powerbi.com/home][Power BI HomePage]]
+- [[https://www.youtube.com/watch?v=5X5LWcLtkzg][Hands-On Power BI Tutorial Beginner to Pro [Full Course]鈥媇]
+
+** Power Virtual Agents
 - [[https://web.powerva.microsoft.com/][Power Virtual Agents HomePage]]
 
 - [[https://docs.microsoft.com/en-us/power-virtual-agents/fundamentals-what-is-power-virtual-agents-portal][Power Virtual Agents web app overview]]
@@ -83,7 +87,7 @@
 
 *** Fun things
 - [[https://emacs.amodernist.com/][Emacs Configuration Generator]]
-- [[https://i.linuxtoy.org/docs/guide/index.html][linuxtoy 开源世界旅行手册]]
+- [[https://i.linuxtoy.org/docs/guide/index.html][linuxtoy 寮�婧愪笘鐣屾梾琛屾墜鍐宂]
 
 ** Notes
 M-x package-list-packages
