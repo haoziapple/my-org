@@ -61,6 +61,7 @@
 - [[https://docs.microsoft.com/en-us/power-virtual-agents/publication-add-bot-to-microsoft-teams][Add a chatbot to Microsoft Teams]]
 - [[https://docs.microsoft.com/en-us/power-virtual-agents/analytics-billed-sessions][View billed sessions for Power Virtual Agents]]
 
+
 * Emacs
 
 ** Links
@@ -124,3 +125,6 @@ public void static main() {
   :ensure t
   :bind ("C-x g" . magit-status))
 #+end_src
+
+
+* My Daily Notes
