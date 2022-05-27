@@ -18,10 +18,11 @@
 *** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-iaas-solutions/?tab=tab-learning-paths][Implement infrasturcture as a service solutions]]
     <2022-05-14 周六>
 
-*** [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-authentication-authorization/?tab=tab-learning-paths][Implement user authentication and authorization]]
+*** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-authentication-authorization/?tab=tab-learning-paths][Implement user authentication and authorization]]
     <2022-05-25 周三>
 
-*** TODO [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-secure-cloud-solutions/?tab=tab-learning-paths][Implement secure cloud solution]]
+*** [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-secure-cloud-solutions/?tab=tab-learning-paths][Implement secure cloud solution]]
+    <2022-05-27 周五>
 
 *** TODO [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-api-management/?tab=tab-learning-paths][Implement API Management]]
 
@@ -57,6 +58,7 @@
 - [[https://www.youtube.com/watch?v=5X5LWcLtkzg][Hands-On Power BI Tutorial Beginner to Pro [Full Course]​]]
 
 ** Power Virtual Agents
+
 - [[https://web.powerva.microsoft.com/][Power Virtual Agents HomePage]]
 
 - [[https://docs.microsoft.com/en-us/power-virtual-agents/fundamentals-what-is-power-virtual-agents-portal][Power Virtual Agents web app overview]]
