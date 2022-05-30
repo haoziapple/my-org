@@ -21,18 +21,18 @@
 *** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-authentication-authorization/?tab=tab-learning-paths][Implement user authentication and authorization]]
     <2022-05-25 周三>
 
-*** [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-secure-cloud-solutions/?tab=tab-learning-paths][Implement secure cloud solution]]
+*** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-secure-cloud-solutions/?tab=tab-learning-paths][Implement secure cloud solution]]
     <2022-05-27 周五>
 
-*** TODO [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-api-management/?tab=tab-learning-paths][Implement API Management]]
+*** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-api-management/?tab=tab-learning-paths][Implement API Management]]
 
-*** TODO [[https://docs.microsoft.com/en-us/learn/paths/az-204-develop-event-based-solutions/?tab=tab-learning-paths][Develop event-based solutions]]
+*** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-develop-event-based-solutions/?tab=tab-learning-paths][Develop event-based solutions]]
 
-*** TODO [[https://docs.microsoft.com/en-us/learn/paths/az-204-develop-message-based-solutions/?tab=tab-learning-paths][Develop message-based solutions]]
+*** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-develop-message-based-solutions/?tab=tab-learning-paths][Develop message-based solutions]]
 
-*** TODO [[https://docs.microsoft.com/en-us/learn/paths/az-204-instrument-solutions-support-monitoring-logging/?tab=tab-learning-paths][Instrument solutions to support monitoring and logging]]
+*** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-instrument-solutions-support-monitoring-logging/?tab=tab-learning-paths][Instrument solutions to support monitoring and logging]]
 
-*** TODO [[https://docs.microsoft.com/en-us/learn/paths/az-204-integrate-caching-content-delivery-within-solutions/?tab=tab-learning-paths][Intefrate caching and content delivery within solutions]]
+*** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-integrate-caching-content-delivery-within-solutions/?tab=tab-learning-paths][Intefrate caching and content delivery within solutions]]
 
 ** Azure AD
 
