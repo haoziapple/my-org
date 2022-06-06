@@ -1,38 +1,49 @@
 * Azure
-** AZ-204:Azure Developer Associate
-- [[https://docs.microsoft.com/en-us/learn/certifications/azure-developer/?tab=tab-learning-paths][Learn Path]]
-- [[https://basf.udemy.com/course/70532-azure/learn/lecture/25928212#overview][Udemy AZ-204 course]]
-- [[https://basf.udemy.com/course/az204-azure-practice/learn/quiz/4701188#overview][Udemy AZ-204 practice]]
+** Azure Certificates
+*** Links
+- [[https://docs.microsoft.com/en-us/users/haowang-1752/][Microsoft Learn Profile]]
+- [[https://www.microsoft.com/en-us/learning/dashboard.aspx][Microsoft Learn Dashboard]]
+- [[https://docs.microsoft.com/en-us/learn/certifications/azure-administrator/][az104-Azure-Administrator-Associate]]
+- [[https://docs.microsoft.com/en-us/learn/certifications/azure-solutions-architect/][az305-Azure-Solutions-Architect-Expert]]
+- [[https://docs.microsoft.com/en-us/learn/certifications/devops-engineer/][az400-DevOps Engineer Expert]]
 
-*** DONE [[https://docs.microsoft.com/en-us/learn/paths/create-azure-app-service-web-apps/?tab=tab-learning-paths][Create Azure App Service web apps]]
 
-*** DONE [[https://docs.microsoft.com/en-us/learn/paths/implement-azure-functions/?tab=tab-learning-paths][Inplement Azure Functions]] 
-    <2022-04-29 周五>
+*** AZ-204:Azure Developer Associate
+ - [[https://docs.microsoft.com/en-us/learn/certifications/azure-developer/?tab=tab-learning-paths][Learn Path]]
+ - [[https://basf.udemy.com/course/70532-azure/learn/lecture/25928212#overview][Udemy AZ-204 course]]
+ - [[https://basf.udemy.com/course/az204-azure-practice/learn/quiz/4701188#overview][Udemy AZ-204 practice]]
 
-*** DONE [[https://docs.microsoft.com/en-us/learn/paths/develop-solutions-that-use-blob-storage/?tab=tab-learning-paths][Develop solutions that use Blob storage]]
-    <2022-05-01 周日>
+**** DONE [[https://docs.microsoft.com/en-us/learn/paths/create-azure-app-service-web-apps/?tab=tab-learning-paths][Create Azure App Service web apps]]
 
-*** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-develop-solutions-that-use-azure-cosmos-db/?tab=tab-learning-paths][Develop solutions that use Azure Cosmos DB]]
-    <2022-05-13 周五>
+**** DONE [[https://docs.microsoft.com/en-us/learn/paths/implement-azure-functions/?tab=tab-learning-paths][Inplement Azure Functions]] 
+     <2022-04-29 周五>
 
-*** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-iaas-solutions/?tab=tab-learning-paths][Implement infrasturcture as a service solutions]]
-    <2022-05-14 周六>
+**** DONE [[https://docs.microsoft.com/en-us/learn/paths/develop-solutions-that-use-blob-storage/?tab=tab-learning-paths][Develop solutions that use Blob storage]]
+     <2022-05-01 周日>
 
-*** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-authentication-authorization/?tab=tab-learning-paths][Implement user authentication and authorization]]
-    <2022-05-25 周三>
+**** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-develop-solutions-that-use-azure-cosmos-db/?tab=tab-learning-paths][Develop solutions that use Azure Cosmos DB]]
+     <2022-05-13 周五>
 
-*** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-secure-cloud-solutions/?tab=tab-learning-paths][Implement secure cloud solution]]
-    <2022-05-27 周五>
+**** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-iaas-solutions/?tab=tab-learning-paths][Implement infrasturcture as a service solutions]]
+     <2022-05-14 周六>
 
-*** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-api-management/?tab=tab-learning-paths][Implement API Management]]
+**** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-authentication-authorization/?tab=tab-learning-paths][Implement user authentication and authorization]]
+     <2022-05-25 周三>
 
-*** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-develop-event-based-solutions/?tab=tab-learning-paths][Develop event-based solutions]]
+**** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-secure-cloud-solutions/?tab=tab-learning-paths][Implement secure cloud solution]]
+     <2022-05-27 周五>
 
-*** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-develop-message-based-solutions/?tab=tab-learning-paths][Develop message-based solutions]]
+**** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-implement-api-management/?tab=tab-learning-paths][Implement API Management]]
+     <2022-05-30 周一>
 
-*** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-instrument-solutions-support-monitoring-logging/?tab=tab-learning-paths][Instrument solutions to support monitoring and logging]]
+**** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-develop-event-based-solutions/?tab=tab-learning-paths][Develop event-based solutions]]
 
-*** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-integrate-caching-content-delivery-within-solutions/?tab=tab-learning-paths][Intefrate caching and content delivery within solutions]]
+**** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-develop-message-based-solutions/?tab=tab-learning-paths][Develop message-based solutions]]
+
+**** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-instrument-solutions-support-monitoring-logging/?tab=tab-learning-paths][Instrument solutions to support monitoring and logging]]
+
+**** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-integrate-caching-content-delivery-within-solutions/?tab=tab-learning-paths][Intefrate caching and content delivery within solutions]]
+
 
 ** Azure AD
 
