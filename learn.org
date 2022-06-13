@@ -1,4 +1,5 @@
 * Azure
+
 ** Azure Certificates
 *** Links
 - [[https://docs.microsoft.com/en-us/users/haowang-1752/][Microsoft Learn Profile]]
@@ -50,6 +51,7 @@
 - [[https://docs.microsoft.com/en-us/rest/api/azure/][Azure REST API reference]]
 - [[https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow][OAuth 2.0 implicit grant flow]]
 
+
 ** Power Apps
 
 - [[https://make.powerapps.com/environments/Default-ecaa386b-c8df-4ce0-ad01-740cbdb5ba55/home][Power Apps HomePage]]
@@ -63,10 +65,12 @@
 - [[https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/create-update-collection][Create and update a collection in a canvas app]]
 - [[https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/powerapps-custom-visual][Power Apps visual for Power BI]]
 
+
 ** Power BI
 
 - [[https://app.powerbi.com/home][Power BI HomePage]]
 - [[https://www.youtube.com/watch?v=5X5LWcLtkzg][Hands-On Power BI Tutorial Beginner to Pro [Full Course]​]]
+
 
 ** Power Virtual Agents
 
@@ -76,7 +80,7 @@
 - [[https://docs.microsoft.com/en-us/power-virtual-agents/publication-add-bot-to-microsoft-teams][Add a chatbot to Microsoft Teams]]
 - [[https://docs.microsoft.com/en-us/power-virtual-agents/analytics-billed-sessions][View billed sessions for Power Virtual Agents]]
 
-
+  
 * Emacs
 
 ** Links
@@ -105,6 +109,7 @@
 - [[https://emacs.amodernist.com/][Emacs Configuration Generator]]
 - [[https://i.linuxtoy.org/docs/guide/index.html][linuxtoy 开源世界旅行手册]]
 
+
 ** Notes
 M-x package-list-packages
 
@@ -118,6 +123,7 @@ C-c C-, ([[https://orgmode.org/manual/Structure-Templates.html][org-insert-struc
 
 C-x r m (add bookmark)
 C-x r b (open bookmark)
+
 
 ** Snippets
 
@@ -142,4 +148,33 @@ public void static main() {
 #+end_src
 
 
+* Google Analytics
+- [[https://www.youtube.com/watch?v=T12YSrswMQ0][Youtube: User-scoped Custom Dimensions in Google Analytics 4 (User properties)]]
+- [[https://www.youtube.com/watch?v=6upqv3kaIIk][Youtube: How to Install Google Analytics 4 (Updated in 2022) with GTAG or GTM]]
+- [[https://www.analyticsmania.com/post/google-tag-manager-tutorial-for-beginners/?utm_medium=video&utm_source=youtube.com&utm_campaign=am+yt+-+install+ga4+2022][Google Tag Manager Tutorial + Video & Free E-Book for Beginners]]
+- [[https://developers.google.com/analytics/devguides/collection/ga4/user-id?platform=websites#gtag.js][Google Doc: Send user IDs]]
+- [[https://developers.google.com/analytics/devguides/collection/gtagjs/custom-dims-mets][Google Doc: Custom dimensions and metrics with gtag.js]]
+
+
 * My Daily Notes
+  
+
+* My Bookmarks
+
+- [[https://support.microsoft.com/en-us/office/keyboard-shortcuts-for-microsoft-teams-2e8e2a70-e8d8-4a19-949b-4c36dd5292d2][Keyboard shortcuts for Microsoft Teams]]
+- [[https://ebookfoundation.github.io/free-programming-books/books/free-programming-books-subjects.html][EbookFoundation/free-projramming-books]]
+- [[https://books.goalkicker.com/][GoalKicker.com: Free Programming Books]]
+- [[https://nvchad.github.io/getting-started/setup][Neovim: NvChad Setup]]
+
+
+** read_list
+
+- [[https://jvns.ca/blog/2021/12/04/how-to-use-dig/][Julia Evans: How to use dig]]
+- [[https://advancedweb.hu/new-language-features-since-java-8-to-18/][New language features since Java 8 to 18]]
+- [[https://github.com/pengfeiw/css-tutorial][Github: penfeiw/css-tutorial]]
+- [[https://github.com/khuedoan/homelab][Github: khuedoan/homelab : Small and energy efficient self-hosting infrastructure]]
+- [[https://space.bilibili.com/1826201500][Bilibili: justyyuk/教娃算法]]
+- [[https://microsoft.github.io/code-with-engineering-playbook/ENG-FUNDAMENTALS-CHECKLIST/][Microsoft: Engineering Fundamentals Checklist]]
+- [[https://ishadeed.com/article/defensive-css/][Defensive CSS]]
+- [[https://deepu.tech/my-beautiful-linux-development-environment/][My beautiful Linux development environment]]
+- [[https://earthly.dev/blog/awk-examples/][Understanding awk]]
