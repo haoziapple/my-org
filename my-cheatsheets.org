@@ -99,6 +99,11 @@ document.cookie.match(`[;\s+]?token=([^;]*)`).pop()
 JSON.parse(window.atob(token.split(".")[1]))
 #+end_src
 
+*** Windows show proxy settings
+C:\> netsh winhttp show proxy
+PS C:\> Get-ItemProperty -Path "Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
+C:\> reg query "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
+
 ** Git
 git log --pretty=oneline
 git diff HEAD^^ HEAD^
