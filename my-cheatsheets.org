@@ -1,0 +1,170 @@
+
+*** Use SDKMan
+#+begin_src bash
+sdk list
+sdk list java
+sdk install leiningen
+sdk install java 8.0.275.hs-adpt
+sdk default java 8.0.275.hs-adpt
+#+end_src
+
+*** Use nvm
+- https://github.com/coreybutler/nvm-windows
+- https://github.com/nvm-sh/nvm
+#+begin_src bash
+nvm install 10.10.0
+nvm list
+nvm list available
+#+end_src
+
+*** add User to Docker User Group
+#+begin_src powershell
+([adsi]"WinNT://./Hyper-V Administrators,group").Add("WinNT://BASFAD/wangh151,user")
+([adsi]"WinNT://./docker-users,group").Add("WinNT://BASFAD/wangh151,user")
+([adsi]"WinNT://./Hyper-V Administrators,group").Add("WinNT://$env:UserDomain/$env:Username,user")
+#+end_src
+
+*** docker run Postgres
+#+begin_src bash
+docker pull timescale/timescaledb:latest-pg11
+docker pull dpage/pgadmin4
+docker run --name my_postgres -e POSTGRES_PASSWORD=flyway123 -e POSTGRES_USER=flyway -e POSTGRES_DB=rts_local -p 5432:5432 -d timescale/timescaledb:latest-pg11
+docker run -d -p 5433:80 --name pgadmin4 -e PGADMIN_DEFAULT_EMAIL=test@123.com -e PGADMIN_DEFAULT_PASSWORD=123456 dpage/pgadmin4
+#+end_src
+
+*** npm init for Azure DevOps
+#+begin_src bash
+nvm install 12.20.0
+npm config list
+npm config set proxy=http://clientproxy.basf.net:8080
+npm install -g vsts-npm-auth
+vsts-npm-auth -config .npmrc
+npm install @angular/cli -g
+npm install increase-memory-limit -g
+项目路径下执行：increase-memory-limiyt
+
+vsts login --token h7qg7ffropkpmtvbcbz575bgfoabaanmxu4iuedm7kezrflsdyfa
+vsts configure --defaults instance=https://dev.azure.com/basf4dev project=TechHero
+#+end_src
+
+*** Windows Terminal Key Bindins
+- Close pane: crtl+shift+w
+- Move pane focus: crtl+[direction arrow]
+- Resize a pane: alt+shift+[direction arrow]
+- Split a pane horizontal: alt+shift+-
+- Split a pane vertical: alt+shift+plus
+
+*** Import CA Certificates in JAVA key store
+#+begin_src cmd
+.\keytool.exe -importcert -file "BASF Root CA 21.cer" -keystore ..\jre\lib\security\cacerts -alias "BASFROOTCA"
+.\keytool.exe -importcert -file "BASF Root CA 21.cer" -keystore C:\Users\wangh154\AppData\Roaming\JetBrains\IntelliJIdea2020.3\ssl\cacerts -alias "BASFROOTCA"
+#+end_src
+
+*** Docker context
+on your local machine 
+docker context create digpro --docker host=ssh://admdigpro@digproVM01.cad.basf.net
+
+After adding the context you can use your local docker to check the container on digpro by adding the context to a command
+docker -c digpro ps
+docker --context digpro ps
+
+You could switch the context, then all commands are executed on the remote machine
+docker context use digpro
+
+*** copy file in Docker
+#+begin_src bash
+docker cp colimo-proxy:/app/conf/nginx.conf .
+docker cp rest_session.lua colimo-proxy:/app/lua/rest_session.lua
+#+end_src
+
+*** VSCode cannot attach remote container
+Message: Command in container failed: (dd iflag=fullblock bs=8192 count=6055 2>/dev/null; dd iflag=fullblock bs=2264 count=1 2>/dev/null) | tar
+delete cache: C:\Users\wangh154\AppData\Local\Temp\vsch\serverCache
+
+*** Terraform error: x509 certificate signed by unknown authority terraform
+ca-certificates path: /etc/ssl/certs/ca-certificates.crt
+ls -lR /etc/ssl
+#+begin_src bash
+apt-get install ca-certificates \
+&& update-ca-certificates
+#+end_src
+
+*** get cookie 'token' by JS
+#+begin_src javascript
+document.cookie.match(`[;\s+]?token=([^;]*)`).pop()
+#+end_src
+
+*** parse JWT by JS
+#+begin_src javascript
+JSON.parse(window.atob(token.split(".")[1]))
+#+end_src
+
+** Git
+git log --pretty=oneline
+git diff HEAD^^ HEAD^
+
+- delete remote branch
+git push origin --delete [branchname]
+- delete local branch
+git branch -d [branchname]
+- prune cached remote branch
+git fetch --prune origin
+
+** Bash
+- Generate Random Password
+cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1
+- view system versoin
+cat /etc/os-release
+
+dpkg -S `which restydoc`
+
+Ctrl + r (bck-i-search)
+
+** kubectl
+- Get pod in Running
+kubectl get pod -o wide -n bcp-site --field-selector=status.phase=Running
+- delete Evicted pod
+kubectl get pods -n bcp-site | grep Evicted | awk '{print $1}' | xargs kubectl delete pod -n bcp-site
+
+- restart pod in kubectl
+- https://segmentfault.com/a/1190000020675199
+kubectl get pod {podname} -n {namespace} -o yaml | kubectl replace --force -f -
+eval $PROXYHK kubectl get pod kb-sp-saml2 -n bcp-sso -o yaml | eval $PROXYHK  kubectl replace --force -f -
+
+** PowerShell
+- Set HOMEPATH instead of Z:
+ls env:
+$env:HOMEDRIVE="C:"
+$env:HOMEPATH="\Users\wangh154\"
+
+- view and set System Environment Variable
+#+begin_src powershell
+[System.Environment]::GetEnvironmentVariable("PATH","user")
+[System.Environment]::GetEnvironmentVariable("PATH","machine")
+[System.Environment]::SetEnvironmentVariable("HTTP_PROXY ", "http://webproxy-hk-failover.global.basf.net:8080", [System.EnvironmentVariableTarget]::User)
+[System.Environment]::SetEnvironmentVariable("HTTPS_PROXY ", "http://webproxy-hk-failover.global.basf.net:8080", [System.EnvironmentVariableTarget]::User)
+#+end_src
+
+** cURL
+- curl SSL certificates: https://curl.se/docs/sslcerts.html
+
+curl --location --request --insecure GET 'https://basf-ec-coatings-kb-test.chinaeast2.cloudapp.chinacloudapi.cn/auth/get_sso.cgi' \
+--header 'Cookie:  mellon-cookie=5ae018959c61c2e8d1274f1c776f17f1;'
+
+curl -s -LI URL -o /dev/null -w '%{http_code}'
+-L
+Tells cURL to follow the URL if it is marked as having been moved
+
+-I
+Only returns the HTTP header, which is where the HTTP response code is located
+
+-s
+Causes cURL to run in silent mode. Ordinarily, cURL displays a progress meter as it executes.
+
+-o
+Tells cURL where to write the general output of the command. In this case, /dev/null, the Linux and macOS bit bucket is used. On Windows systems, you can write to a file named nul, for which Windows provides built-in device driver support.
+
+-w
+Specifies what cURL should write to standard output, and how to format that information. The string '%{http_code}' simply writes the contents of the variable http_code
+
+
