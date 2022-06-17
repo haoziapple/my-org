@@ -18,3 +18,5 @@
 - [[https://ishadeed.com/article/defensive-css/][Defensive CSS]]
 - [[https://deepu.tech/my-beautiful-linux-development-environment/][My beautiful Linux development environment]]
 - [[https://earthly.dev/blog/awk-examples/][Understanding awk]]
+- https://www.scaledagileframework.com/
+- [[https://nodeschool.io/][nodeschool]]
