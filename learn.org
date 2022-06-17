@@ -156,25 +156,3 @@ public void static main() {
 - [[https://developers.google.com/analytics/devguides/collection/gtagjs/custom-dims-mets][Google Doc: Custom dimensions and metrics with gtag.js]]
 
 
-* My Daily Notes
-  
-
-* My Bookmarks
-
-- [[https://support.microsoft.com/en-us/office/keyboard-shortcuts-for-microsoft-teams-2e8e2a70-e8d8-4a19-949b-4c36dd5292d2][Keyboard shortcuts for Microsoft Teams]]
-- [[https://ebookfoundation.github.io/free-programming-books/books/free-programming-books-subjects.html][EbookFoundation/free-projramming-books]]
-- [[https://books.goalkicker.com/][GoalKicker.com: Free Programming Books]]
-- [[https://nvchad.github.io/getting-started/setup][Neovim: NvChad Setup]]
-
-
-** read_list
-
-- [[https://jvns.ca/blog/2021/12/04/how-to-use-dig/][Julia Evans: How to use dig]]
-- [[https://advancedweb.hu/new-language-features-since-java-8-to-18/][New language features since Java 8 to 18]]
-- [[https://github.com/pengfeiw/css-tutorial][Github: penfeiw/css-tutorial]]
-- [[https://github.com/khuedoan/homelab][Github: khuedoan/homelab : Small and energy efficient self-hosting infrastructure]]
-- [[https://space.bilibili.com/1826201500][Bilibili: justyyuk/教娃算法]]
-- [[https://microsoft.github.io/code-with-engineering-playbook/ENG-FUNDAMENTALS-CHECKLIST/][Microsoft: Engineering Fundamentals Checklist]]
-- [[https://ishadeed.com/article/defensive-css/][Defensive CSS]]
-- [[https://deepu.tech/my-beautiful-linux-development-environment/][My beautiful Linux development environment]]
-- [[https://earthly.dev/blog/awk-examples/][Understanding awk]]
