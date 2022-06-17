@@ -13,7 +13,7 @@
 - [[https://advancedweb.hu/new-language-features-since-java-8-to-18/][New language features since Java 8 to 18]]
 - [[https://github.com/pengfeiw/css-tutorial][Github: penfeiw/css-tutorial]]
 - [[https://github.com/khuedoan/homelab][Github: khuedoan/homelab : Small and energy efficient self-hosting infrastructure]]
-- [[https://space.bilibili.com/1826201500][Bilibili: justyyuk/½ÌÍÞËã·¨]]
+- [[https://space.bilibili.com/1826201500][Bilibili: justyyuk/æ•™å¨ƒç®—æ³•]]
 - [[https://microsoft.github.io/code-with-engineering-playbook/ENG-FUNDAMENTALS-CHECKLIST/][Microsoft: Engineering Fundamentals Checklist]]
 - [[https://ishadeed.com/article/defensive-css/][Defensive CSS]]
 - [[https://deepu.tech/my-beautiful-linux-development-environment/][My beautiful Linux development environment]]
