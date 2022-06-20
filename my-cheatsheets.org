@@ -104,6 +104,22 @@ C:\> netsh winhttp show proxy
 PS C:\> Get-ItemProperty -Path "Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
 C:\> reg query "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
 
+*** IP Range of Azure Services
+- [[https://docs.microsoft.com/en-us/power-platform/admin/online-requirements#ip-addresses-required][Power Platform URLs and IP address ranges]]
+- [[https://www.microsoft.com/download/details.aspx?id=56519][Azure IP Ranges and Service Tags ¨C Public Cloud]]
+- [[https://www.microsoft.com/download/details.aspx?id=57062][Azure IP Ranges and Service Tags ¨C China Cloud]]
+
+*** Import CA root certificates on Linux System(Debian/Ubuntu)
+- [[https://thomas-leister.de/en/how-to-import-ca-root-certificate/][How to import CA root certificates on Linux and Windows]]
+- 1. use openssl to download cert at first.
+- 2. extract only the root cert and import.
+- 3. it seems certificates in cer, crt, pem are all the same. Only need to change the filename extension.
+#+begin_src bash
+openssl s_client -showcerts -servername server -connect basf.net:443 > basf-cacert.pem
+sudo -i cp /workspaces/workspace2/basf-root-ca-cert.pem /usr/local/share/ca-certificates/extra/basf-root-ca-cert.crt
+sudo -i update-ca-certificates
+#+end_src
+
 ** Git
 git log --pretty=oneline
 git diff HEAD^^ HEAD^
