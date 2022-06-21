@@ -131,6 +131,13 @@ git branch -d [branchname]
 - prune cached remote branch
 git fetch --prune origin
 
+*** Git conflicts after squash merge
+1. dev merge to master using squash
+2. add new commits on dev
+3. conflicts when dev merge to master again
+- [[https://stackoverflow.com/questions/55113672/git-conflicts-after-squash-merge][Git conflicts after squash merge]]
+- [[https://softwareengineering.stackexchange.com/questions/365658/does-squashing-pull-requests-break-gits-merging-algorithm][Does squashing pull requests break git's merging algorithm?]]
+
 ** Bash
 - Generate Random Password
 cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1
