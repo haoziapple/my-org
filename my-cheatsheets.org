@@ -120,6 +120,24 @@ sudo -i cp /workspaces/workspace2/basf-root-ca-cert.pem /usr/local/share/ca-cert
 sudo -i update-ca-certificates
 #+end_src
 
+*** Certificate verification failed when using Azure CLI to deploy function app
+
+error msg:
+#+begin_src bash
+eval $PROXYHK az functionapp deployment source config-zip -g cpshop_prod_rg  -n cpshop-prod-functions  --src bcp-functions-1642558598227.zip
+Getting scm site credentials for zip deployment
+Starting zip deployment. This operation can take a while to complete ...
+HTTPSConnectionPool(host='cpshop-prod-functions.scm.chinacloudsites.cn', port=443): Max retries exceeded with url: /api/zipdeploy?isAsync=true (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')],)",),))
+Certificate verification failed. This typically happens when using Azure CLI behind a proxy that intercepts traffic with a self-signed certificate. Please add this certificate to the trusted CA bundle. More info: https://docs.microsoft.com/cli/azure/use-cli-effectively#work-behind-a-proxy.
+#+end_src
+
+import certificate:
+- https://docs.microsoft.com/en-us/cli/azure/use-cli-effectively#work-behind-a-proxy
+- https://stackoverflow.com/questions/30405867/how-to-get-python-requests-to-trust-a-self-signed-ssl-certificate
+#+begin_src bash
+cat /workspaces/workspace2/deploy/certificates/basf-root-ca-cert.pem >> /opt/az/lib/python3.6/site-packages/certifi/cacert.pem
+#+end_src
+
 ** Git
 git log --pretty=oneline
 git diff HEAD^^ HEAD^
