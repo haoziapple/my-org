@@ -131,6 +131,9 @@ HTTPSConnectionPool(host='cpshop-prod-functions.scm.chinacloudsites.cn', port=44
 Certificate verification failed. This typically happens when using Azure CLI behind a proxy that intercepts traffic with a self-signed certificate. Please add this certificate to the trusted CA bundle. More info: https://docs.microsoft.com/cli/azure/use-cli-effectively#work-behind-a-proxy.
 #+end_src
 
+Use the Azure CLI successfully:
+- https://docs.microsoft.com/en-us/cli/azure/use-cli-effectively?tabs=bash%2Cbash2#work-behind-a-proxy
+
 import certificate:
 - https://docs.microsoft.com/en-us/cli/azure/use-cli-effectively#work-behind-a-proxy
 - https://stackoverflow.com/questions/30405867/how-to-get-python-requests-to-trust-a-self-signed-ssl-certificate
