@@ -7,6 +7,7 @@
 - [[https://docs.microsoft.com/en-us/learn/certifications/azure-administrator/][az104-Azure-Administrator-Associate]]
 - [[https://docs.microsoft.com/en-us/learn/certifications/azure-solutions-architect/][az305-Azure-Solutions-Architect-Expert]]
 - [[https://docs.microsoft.com/en-us/learn/certifications/devops-engineer/][az400-DevOps Engineer Expert]]
+- [[https://www.examtopics.com/][exam topics, to see exams material of Azure]]
 
 
 *** AZ-204:Azure Developer Associate
