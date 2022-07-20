@@ -1,4 +1,4 @@
-
+** Read Later
 *** Use SDKMan
 #+begin_src bash
 sdk list
@@ -170,23 +170,86 @@ dpkg -S `which restydoc`
 Ctrl + r (bck-i-search)
 
 ** kubectl
-- Get pod in Running
+*** Get pod in Running
 kubectl get pod -o wide -n bcp-site --field-selector=status.phase=Running
-- delete Evicted pod
+*** delete Evicted pod
 kubectl get pods -n bcp-site | grep Evicted | awk '{print $1}' | xargs kubectl delete pod -n bcp-site
 
-- restart pod in kubectl
+*** restart pod in kubectl
 - https://segmentfault.com/a/1190000020675199
 kubectl get pod {podname} -n {namespace} -o yaml | kubectl replace --force -f -
 eval $PROXYHK kubectl get pod kb-sp-saml2 -n bcp-sso -o yaml | eval $PROXYHK  kubectl replace --force -f -
 
+*** kubectl cluster level commands
+#+begin_src bash
+kubectl config get-contexts
+kubectl config current-context
+kubectl config use-context docker-desktop
+kubectl top node
+kubectl api-resources
+kubectl cluster-info
+#+end_src
+
+*** kubectl resources level command
+#+begin_src bash
+kubectl get event -n <NAMESPACE> | grep <DEPLOYMENT_NAME>
+
+kubectl port-forward <POD_NAME> <LOCALHOST_PORT>:<POD_PORT>
+kubectl port-forward svc/<SERVICE_NAME> <LOCALHOST_PORT>:<SERVICE_PORT>
+kubectl port-forward nginx-hht64 5000:80
+kubectl port-forward svc/nginx 5000:80
+
+kubectl logs <POD_NAME> -c <CONTAINER_NAME> -n <NAMESPACE>
+
+# test if the account can do certain action
+kubectl --as=system:serviceaccount:<NAMESPACE>:<SERVICE_ACCOUNT_NAME> auth can-i get configmap/<CONFIGMAP_NAME>
+kubectl -n <NAMESPACE> auth can-i list secrets --as <USERACCOUNT>
+
+kubectl top pod -n <NAMESPACE>
+
+# Create ingress resource from a command line:
+# Here is an ingress created with name ¡®demo¡¯ and class ¡®nginx¡¯ 
+# and configured to use host ¡°demo.localdev.me¡± to point to ¡®demo¡¯ service on port 80.
+kubectl create ingress demo --class=nginx --rule="demo.localdev.me/*=demo:80"
+
+# Copy secret from a namespace to another
+kubectl get secret aks-ingress-tls --namespace=dev -o yaml | sed 's/namespace: .*/namespace: demo/' | kubectl apply -f -
+
+# Open a bash or sh terminal inside a pod
+kubectl exec -it <POD_NAME> -n <NAMESPACE> -- /bin/bash
+kubectl exec -it <POD_NAME> -n <NAMESPACE> -- /bin/sh
+
+# Copy files from/to a pod
+kubectl cp <FILENAME> <NAMESPACE>/<PODNAME>:</path/to/file>
+kubectl cp <NAMESPACE>/<PODNAME>:</path/to/file> <FILENAME>
+kubectl cp file.txt default/nginx-345gjig:/home
+kubectl cp default/nginx-345gjig:/home/file.txt ./file.txt
+
+# Apply resources directly through terminal
+$echo "
+apiVersion: v1
+kind: Service
+metadata:
+  name: prometheus-svc
+  namespace: monitoring
+spec:
+  selector:
+    env: metrics
+  type: ClusterIP
+  ports:
+  - port: 9090
+    protocol: TCP
+    targetPort: 9090
+" | kubectl apply -f -
+#+end_src
+
 ** PowerShell
-- Set HOMEPATH instead of Z:
+*** Set HOMEPATH instead of Z:
 ls env:
 $env:HOMEDRIVE="C:"
 $env:HOMEPATH="\Users\wangh154\"
 
-- view and set System Environment Variable
+*** view and set System Environment Variable
 #+begin_src powershell
 [System.Environment]::GetEnvironmentVariable("PATH","user")
 [System.Environment]::GetEnvironmentVariable("PATH","machine")
@@ -195,6 +258,7 @@ $env:HOMEPATH="\Users\wangh154\"
 #+end_src
 
 ** cURL
+*** curl SSL certificates
 - curl SSL certificates: https://curl.se/docs/sslcerts.html
 
 curl --location --request --insecure GET 'https://basf-ec-coatings-kb-test.chinaeast2.cloudapp.chinacloudapi.cn/auth/get_sso.cgi' \
