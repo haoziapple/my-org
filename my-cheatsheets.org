@@ -286,3 +286,16 @@ Specifies what cURL should write to standard output, and how to format that info
 #+begin_src sql
 SELECT * from [table_name] order by [id] offset 2 row fetch next 5 row only;
 #+end_src
+
+** Power Platform
+
+*** Output CSV in UTF-8 format in Power Automate
+If your .csv file shows broken characters instead of Chinese, 
+it is because the encoded file does not include BOM for UTF-8. 
+So, please add 3 BOM characters as below. It will show the text normally in excel.
+#+begin_src javascript
+concat(uriComponentToString('%EF%BB%BF'),body('Create_CSV_table'))
+#+end_src
+- https://powerusers.microsoft.com/t5/General-Power-Automate/Convert-exvel-to-CSV-UTF-8/td-p/472040
+Flow Actions: OneDrive for Business ¨C Update File ¨C YouTube
+- https://365community.online/flow-actions-onedrive-for-business-update-file-youtube
