@@ -287,6 +287,19 @@ Specifies what cURL should write to standard output, and how to format that info
 SELECT * from [table_name] order by [id] offset 2 row fetch next 5 row only;
 #+end_src
 
+*** Use Python pyodbc lib to connect SQL Server by AAD
+#+begin_src python
+server = 'sqlsrv-prod-eclab-001.database.windows.net'
+database = 'sqldb-prod-ecaopr-001'
+username = 'wangh154@basfad.basf.net'
+conn = pyodbc.connect(
+    'DRIVER={ODBC Driver 17 for SQL Server};SERVER=' + server 
+    + ';DATABASE=' + database 
+    + ';UID=' + username 
+    + ';Authentication=ActiveDirectoryInteractive')
+cursor = conn.cursor()
+#+end_src
+
 ** Power Platform
 
 *** Output CSV in UTF-8 format in Power Automate

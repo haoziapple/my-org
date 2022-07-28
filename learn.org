@@ -46,6 +46,11 @@
 
 **** DONE [[https://docs.microsoft.com/en-us/learn/paths/az-204-integrate-caching-content-delivery-within-solutions/?tab=tab-learning-paths][Intefrate caching and content delivery within solutions]]
 
+*** AZ-204:DevOps Engineer Expert
+- [[https://docs.microsoft.com/en-us/certifications/devops-engineer/][Homepage: Microsoft Certificated: DevOps Engineer Expert]]
+
+- [[https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M01_L01_Agile_Planning_and_Portfolio_Management_with_Azure_Boards.html][Lab 01: Agile Planning and Portfolio Management with Azure Boards]]
+- [[https://git-lfs.github.com/][Git LFS to version large files]]
 
 ** Azure AD
 
