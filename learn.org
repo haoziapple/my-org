@@ -85,7 +85,6 @@
 - [[https://docs.microsoft.com/en-us/power-virtual-agents/fundamentals-what-is-power-virtual-agents-portal][Power Virtual Agents web app overview]]
 - [[https://docs.microsoft.com/en-us/power-virtual-agents/publication-add-bot-to-microsoft-teams][Add a chatbot to Microsoft Teams]]
 - [[https://docs.microsoft.com/en-us/power-virtual-agents/analytics-billed-sessions][View billed sessions for Power Virtual Agents]]
-
   
 * Emacs
 
@@ -159,7 +158,6 @@ public void static main() {
 - Press D to mark the packages to delete
 - Press X to execute deletion
 - Reference: https://stackoverflow.com/questions/20541322/how-to-remove-installed-elpa-package
-
 
 * Google Analytics
 - [[https://www.youtube.com/watch?v=T12YSrswMQ0][Youtube: User-scoped Custom Dimensions in Google Analytics 4 (User properties)]]
