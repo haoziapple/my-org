@@ -153,6 +153,13 @@ public void static main() {
   :bind ("C-x g" . magit-status))
 #+end_src
 
+*** How to remove installed elpa package
+- M-x list-packages
+- C-s <PACKAGE-NAME>
+- Press D to mark the packages to delete
+- Press X to execute deletion
+- Reference: https://stackoverflow.com/questions/20541322/how-to-remove-installed-elpa-package
+
 
 * Google Analytics
 - [[https://www.youtube.com/watch?v=T12YSrswMQ0][Youtube: User-scoped Custom Dimensions in Google Analytics 4 (User properties)]]
