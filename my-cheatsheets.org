@@ -142,6 +142,7 @@ cat /workspaces/workspace2/deploy/certificates/basf-root-ca-cert.pem >> /opt/az/
 #+end_src
 
 ** Git
+*** Common use commands
 git log --pretty=oneline
 git diff HEAD^^ HEAD^
 
@@ -158,6 +159,19 @@ git fetch --prune origin
 3. conflicts when dev merge to master again
 - [[https://stackoverflow.com/questions/55113672/git-conflicts-after-squash-merge][Git conflicts after squash merge]]
 - [[https://softwareengineering.stackexchange.com/questions/365658/does-squashing-pull-requests-break-gits-merging-algorithm][Does squashing pull requests break git's merging algorithm?]]
+
+*** Use SSH key in Github
+1. Generate a new SSH key pair in local machine ==> ssh-keygen -t rsa -b 4096 -C "haozixiaowang@163.com"
+2. Add Public SSH key in Github settings web portal
+3. Using specific SSH key got gihub.com ==> create "config" file in "~/.ssh" 
+4. Reference: https://www.jianshu.com/p/82aa1678411e
+#+begin_src config
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile C:\Users\wangh154\.ssh\github_rsa
+    IdentitiesOnly yes
+#+end_src
 
 ** Bash
 - Generate Random Password
