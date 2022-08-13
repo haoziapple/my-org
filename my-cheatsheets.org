@@ -17,21 +17,6 @@ nvm list
 nvm list available
 #+end_src
 
-*** add User to Docker User Group
-#+begin_src powershell
-([adsi]"WinNT://./Hyper-V Administrators,group").Add("WinNT://BASFAD/wangh151,user")
-([adsi]"WinNT://./docker-users,group").Add("WinNT://BASFAD/wangh151,user")
-([adsi]"WinNT://./Hyper-V Administrators,group").Add("WinNT://$env:UserDomain/$env:Username,user")
-#+end_src
-
-*** docker run Postgres
-#+begin_src bash
-docker pull timescale/timescaledb:latest-pg11
-docker pull dpage/pgadmin4
-docker run --name my_postgres -e POSTGRES_PASSWORD=flyway123 -e POSTGRES_USER=flyway -e POSTGRES_DB=rts_local -p 5432:5432 -d timescale/timescaledb:latest-pg11
-docker run -d -p 5433:80 --name pgadmin4 -e PGADMIN_DEFAULT_EMAIL=test@123.com -e PGADMIN_DEFAULT_PASSWORD=123456 dpage/pgadmin4
-#+end_src
-
 *** npm init for Azure DevOps
 #+begin_src bash
 nvm install 12.20.0
@@ -53,23 +38,6 @@ vsts configure --defaults instance=https://dev.azure.com/basf4dev project=TechHe
 - Resize a pane: alt+shift+[direction arrow]
 - Split a pane horizontal: alt+shift+-
 - Split a pane vertical: alt+shift+plus
-
-*** Docker context
-on your local machine 
-docker context create digpro --docker host=ssh://admdigpro@digproVM01.cad.basf.net
-
-After adding the context you can use your local docker to check the container on digpro by adding the context to a command
-docker -c digpro ps
-docker --context digpro ps
-
-You could switch the context, then all commands are executed on the remote machine
-docker context use digpro
-
-*** copy file in Docker
-#+begin_src bash
-docker cp colimo-proxy:/app/conf/nginx.conf .
-docker cp rest_session.lua colimo-proxy:/app/lua/rest_session.lua
-#+end_src
 
 *** VSCode cannot attach remote container
 Message: Command in container failed: (dd iflag=fullblock bs=8192 count=6055 2>/dev/null; dd iflag=fullblock bs=2264 count=1 2>/dev/null) | tar
@@ -174,14 +142,27 @@ Host github.com
 #+end_src
 
 ** Bash
-- Generate Random Password
+*** Generate Random Password
 cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1
-- view system versoin
+*** view system versoin
 cat /etc/os-release
-
+*** search for packages
 dpkg -S `which restydoc`
-
-Ctrl + r (bck-i-search)
+*** Find out top Disk Space consuming Directories and Files
+#+begin_src bash
+# find most consuming root directory at first
+df -h
+# find top 10 sub-directories in current path, you may need to run this recursively (cd to one sub-directory and run this again)
+du -hs * | sort -rh | head -10
+# -S to not include the size of sub-directories
+du -hS * | sort -rh | head -10
+# find out top files sizes only
+find -type f -exec du -Sh {} + | sort -rh | head -n 10
+# find top files in a location
+find /home -type f -printf "%s %p\n" | sort -rn | head -n 5
+#+end_src
+- https://www.tecmint.com/find-top-large-directories-and-files-sizes-in-linux/
+- https://www.tecmint.com/check-linux-disk-usage-of-files-and-directories/
 
 ** kubectl
 *** Get pod in Running
@@ -326,3 +307,45 @@ concat(uriComponentToString('%EF%BB%BF'),body('Create_CSV_table'))
 - https://powerusers.microsoft.com/t5/General-Power-Automate/Convert-exvel-to-CSV-UTF-8/td-p/472040
 Flow Actions: OneDrive for Business ¨C Update File ¨C YouTube
 - https://365community.online/flow-actions-onedrive-for-business-update-file-youtube
+
+** Docker
+
+*** clean docker overlay2, unused images
+#+begin_src bash
+docker system df
+docker diff <container-name>
+docker system prune --all
+#+end_src
+- https://stackoverflow.com/questions/46672001/is-it-safe-to-clean-docker-overlay2
+
+*** add User to Docker User Group
+#+begin_src powershell
+([adsi]"WinNT://./Hyper-V Administrators,group").Add("WinNT://BASFAD/wangh151,user")
+([adsi]"WinNT://./docker-users,group").Add("WinNT://BASFAD/wangh151,user")
+([adsi]"WinNT://./Hyper-V Administrators,group").Add("WinNT://$env:UserDomain/$env:Username,user")
+#+end_src
+
+*** docker run Postgres
+#+begin_src bash
+docker pull timescale/timescaledb:latest-pg11
+docker pull dpage/pgadmin4
+docker run --name my_postgres -e POSTGRES_PASSWORD=flyway123 -e POSTGRES_USER=flyway -e POSTGRES_DB=rts_local -p 5432:5432 -d timescale/timescaledb:latest-pg11
+docker run -d -p 5433:80 --name pgadmin4 -e PGADMIN_DEFAULT_EMAIL=test@123.com -e PGADMIN_DEFAULT_PASSWORD=123456 dpage/pgadmin4
+#+end_src
+
+*** Docker context
+on your local machine
+docker context create digpro --docker host=ssh://admdigpro@digproVM01.cad.basf.net
+
+After adding the context you can use your local docker to check the container on digpro by adding the context to a command
+docker -c digpro ps
+docker --context digpro ps
+
+You could switch the context, then all commands are executed on the remote machine
+docker context use digpro
+
+*** copy file in Docker
+#+begin_src bash
+docker cp colimo-proxy:/app/conf/nginx.conf .
+docker cp rest_session.lua colimo-proxy:/app/lua/rest_session.lua
+#+end_src
