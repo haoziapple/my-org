@@ -50,6 +50,8 @@
 - [[https://docs.microsoft.com/en-us/certifications/devops-engineer/][Homepage: Microsoft Certificated: DevOps Engineer Expert]]
 
 - [[https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M01_L01_Agile_Planning_and_Portfolio_Management_with_Azure_Boards.html][Lab 01: Agile Planning and Portfolio Management with Azure Boards]]
+- [[https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M01_L02_Version_Controlling_with_Git_in_Azure_Repos.html][Lab 02: Version Controlling with Git in Azure Repos Student lab manual]]
+- [[https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M02_L03_Version_Controlling_with_Git_in_Azure_Repos.html][Lab 03: Version Controlling with Git in Azure Repos Student lab manual]]
 - [[https://git-lfs.github.com/][Git LFS to version large files]]
 
 ** Azure AD
