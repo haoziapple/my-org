@@ -2,6 +2,8 @@
 
 * My Bookmarks
 
+** collects
+
 - [[https://support.microsoft.com/en-us/office/keyboard-shortcuts-for-microsoft-teams-2e8e2a70-e8d8-4a19-949b-4c36dd5292d2][Keyboard shortcuts for Microsoft Teams]]
 - [[https://ebookfoundation.github.io/free-programming-books/books/free-programming-books-subjects.html][EbookFoundation/free-projramming-books]]
 - [[https://books.goalkicker.com/][GoalKicker.com: Free Programming Books]]
@@ -21,3 +23,37 @@
 - [[https://earthly.dev/blog/awk-examples/][Understanding awk]]
 - https://www.scaledagileframework.com/
 - [[https://nodeschool.io/][nodeschool]]
+
+*** read_later
+
+- [[https://blog.pragmaticengineer.com/how-to-become-a-full-time-creator/][Becoming a Full-Time Creator as a Software Engineer: Controversial Advice - The Pragmatic Engineer]]
+- [[https://www.joshwcomeau.com/blog/how-i-built-my-blog/][How I Built my Blog using MDX, Next.js, and React]]
+- [[https://imf.ms/web/2022/07/05/my-first-web-hybird-project-experience/][我零基础独立开发一个 Web/Hybird 项目的经历 - f_ms | painter]]
+
+*** know_little_more
+
+- [[https://allagora.wordpress.com/2022/03/22/use-dns-txt-lookup-to-gain-quick-insights-which-services-companies-are-using/][Use DNS TXT lookup to gain quick insights which services companies are using – AllAgora]]
+- [[https://docs.microsoft.com/en-us/visualstudio/bridge/overview-bridge-to-kubernetes][What is Bridge to Kubernetes? | Microsoft Docs]]
+- [[https://blogs.cisco.com/developer/373-containerimages-03][Understanding Container Images, Part 3: Working with Overlays]]
+
+** dev_tools
+
+- [[https://www.juicefs.com/en/][JuiceFS - Open Source Distributed POSIX File System for Cloud]]
+- [[https://certbot.eff.org/][Certbot | Certbot]]
+- [[https://letsencrypt.org/docs/client-options/][ACME Client Implementations - Let's Encrypt]]
+- [[https://www.sokrates.dev/][Sokrates - polyglot source code examination tool]]
+- [[https://www.diagrams.net/][Diagram Software and Flowchart Maker]]
+- [[https://stackblitz.com/][StackBlitz - Online Web Devlopment]]
+
+** learn_from_lazycat
+
+- [[https://manateelazycat.github.io/emacs/2019/05/12/emacs-hackers.html][Emacs黑客列表]]
+- [[https://manateelazycat.github.io/reading/2018/07/24/my-recommand-books.html][我的计算机书籍推荐清单]]
+- [[http://book.realworldhaskell.org/][Real World Haskell]]
+- [[http://learnyouahaskell.com/chapters][Chapters - Learn You a Haskell for Great Good!]]
+- [[https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html][Top (GNU Emacs Lisp Reference Manual)]]
+- [[https://course.rs/about-book.html][Rust 语言圣经 - Rust语言圣经(Rust Course)]]
+- [[https://ruby-china.github.io/rails-guides/getting_started.html][Rails 入门 — Ruby on Rails Guides]]
+- [[https://manateelazycat.github.io/emacs/2016/03/16/auto-save.html][Emacs, 我已经十年没有按过保存按键了（附带 auto-save.el 源码解析）]]
+- [[https://manateelazycat.github.io/emacs/2016/03/08/emacs-basic-config.html][Emacs 最基本的一些配置说明]]
+
