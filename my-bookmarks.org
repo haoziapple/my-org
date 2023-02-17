@@ -35,6 +35,8 @@
 - [[https://allagora.wordpress.com/2022/03/22/use-dns-txt-lookup-to-gain-quick-insights-which-services-companies-are-using/][Use DNS TXT lookup to gain quick insights which services companies are using – AllAgora]]
 - [[https://docs.microsoft.com/en-us/visualstudio/bridge/overview-bridge-to-kubernetes][What is Bridge to Kubernetes? | Microsoft Docs]]
 - [[https://blogs.cisco.com/developer/373-containerimages-03][Understanding Container Images, Part 3: Working with Overlays]]
+- [[https://github.com/hackclub/some-assembly-required][Ebook: some-assembly-required]]
+- [[https://github.com/bitcoinbook/bitcoinbook][Ebook: Mastering Bitcoin]]
 
 ** dev_tools
 
