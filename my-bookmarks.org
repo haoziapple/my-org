@@ -46,6 +46,8 @@
 - [[https://www.sokrates.dev/][Sokrates - polyglot source code examination tool]]
 - [[https://www.diagrams.net/][Diagram Software and Flowchart Maker]]
 - [[https://stackblitz.com/][StackBlitz - Online Web Devlopment]]
+- [[https://paketo.io/][Paketo Buildpacks - Transform your application source code into container images]]
+- [[https://k6.io/][k6 - The best developer experience for load testing]]
 
 ** learn_from_lazycat
 
@@ -57,5 +59,5 @@
 - [[https://course.rs/about-book.html][Rust 语言圣经 - Rust语言圣经(Rust Course)]]
 - [[https://ruby-china.github.io/rails-guides/getting_started.html][Rails 入门 — Ruby on Rails Guides]]
 - [[https://manateelazycat.github.io/emacs/2016/03/16/auto-save.html][Emacs, 我已经十年没有按过保存按键了（附带 auto-save.el 源码解析）]]
-- [[https://manateelazycat.github.io/emacs/2016/03/08/emacs-basic-config.html][Emacs 最基本的一些配置说明]]
+
 

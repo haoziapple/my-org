@@ -164,6 +164,11 @@ find /home -type f -printf "%s %p\n" | sort -rn | head -n 5
 - https://www.tecmint.com/find-top-large-directories-and-files-sizes-in-linux/
 - https://www.tecmint.com/check-linux-disk-usage-of-files-and-directories/
 
+*** Command line tools
+- jq
+- httping
+- vmstat
+
 ** kubectl
 *** Get pod in Running
 kubectl get pod -o wide -n bcp-site --field-selector=status.phase=Running
@@ -349,3 +354,8 @@ docker context use digpro
 docker cp colimo-proxy:/app/conf/nginx.conf .
 docker cp rest_session.lua colimo-proxy:/app/lua/rest_session.lua
 #+end_src
+
+** Auto Test
+
+- [[https://blog.checklyhq.com/how-to-bypass-totp-based-2fa-login-flows-with-playwright/][How to Bypass TOTP-Based 2FA Login Flows With Playwright]]
+Use OTP Auth library in npm  
