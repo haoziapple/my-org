@@ -141,6 +141,15 @@ Host github.com
     IdentitiesOnly yes
 #+end_src
 
+*** The 'pre-commit' not running
+Please follow this steps to configure it:
+
+1. Check if you have a folder called '.husky) in out branch (otherwise take develop to have it)
+2. Install npx if you haven't got it using `npm install -g npx`
+3. Execute the following command `git config core.hooksPath`
+4. If you get any response please execute this next command: `git config --unset core.hookspath`
+5. Finally when you execute your next commit
+
 ** Bash
 *** Generate Random Password
 cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1
